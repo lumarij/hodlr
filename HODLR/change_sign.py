@@ -1,6 +1,7 @@
 from hodlr import *
 import copy
 
+#mijenjanje predznaka svim elementima HODLR matrice
 def change_sign(H):
    mH = copy.deepcopy(H)
    if H.is_leafnode():

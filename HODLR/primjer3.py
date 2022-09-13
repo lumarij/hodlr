@@ -3,7 +3,7 @@ import math
 from compress import *
 from hodlr import *
 
-
+#primjer 4.1.3
 n = int(input("Unesite veličinu matrice:"))
 tmp = n//2
 quadric = np.zeros((tmp,tmp))

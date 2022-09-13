@@ -2,7 +2,7 @@ from hodlr import *
 from times import *
 from scipy.linalg import lu
 import copy
-
+#približna lu faktorizacija HODLR matrice
 def hodlr_lu(H):
    HL = copy.deepcopy(H)
    HU = copy.deepcopy(H)
@@ -39,7 +39,7 @@ def solve_lower_triangular(H1, x):
 
 def solve_upper_triangular(H1, x):
    if H1.is_leafnode():
-      y = np.matmul(x, np.linalg.inv(H1.F)) #moze li se ovo drugacije
+      y = np.matmul(x, np.linalg.inv(H1.F)) 
       return y
    else:
       n = H1.A11.sz

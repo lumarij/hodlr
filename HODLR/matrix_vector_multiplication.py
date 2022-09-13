@@ -1,8 +1,9 @@
 from hodlr import *
 from compress import *
 
-def matrix_vector_multiplication(H ,v):
-   if is_leafnode(H):
+#množenje HODLR matrice i vektora
+def matrix_vector_multiplication(H,v):
+   if H.is_leafnode():
       return np.matmul(H.F, v)
    else:
       v1 = v[:H.sz//2]

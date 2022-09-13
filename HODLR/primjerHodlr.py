@@ -1,4 +1,6 @@
 from hodlr import *
+#primjer 3.1.3
+
 d = np.array([2, -1, 1, 2, 2, 1, 1, 1])
 d1 = np.array([2, 1, 2, 1, 2, 2, 2])
 d2 = np.array([1, 1, 1, 1, 1, 1, 1])

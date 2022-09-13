@@ -2,8 +2,8 @@ from hodlr import *
 from compress import *
 import copy
 
+#zbrajanje dviju HODLR matrica
 def hodlr_plus(H1, H2):
-   #sum of two HODLR matrices
    H = copy.deepcopy(H1) 
    if H1.is_leafnode():
       H.F = np.add(H1.F, H2.F)

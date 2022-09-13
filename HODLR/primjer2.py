@@ -1,8 +1,10 @@
-from hodlr import *
+from HODLR.hodlr import *
 from compress import *
 from scipy.linalg import hilbert
 import math
-n = 1000
+
+#primjer 4.1.2
+n = 1024
 a = np.zeros((n,n))
 for i in range(n):
     for j in range(n):

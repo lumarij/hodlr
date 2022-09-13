@@ -1,6 +1,6 @@
 from hodlr import *
 import copy
-
+#transponiranje HODLR matrice
 def transpose(H):
    HT = copy.deepcopy(H)
    if H.is_leafnode():

@@ -1,5 +1,7 @@
 from hodlr import *
-
+from options import *
+threshold = pow(10,-12)
+#greška "aproksimacije" HODLR matricom
 def check_tolerance(A, B):
    diff = np.subtract(A, B)
    u1, s1, v1 = np.linalg.svd(A)
